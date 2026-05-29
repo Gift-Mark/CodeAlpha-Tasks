@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Modern Gallery UI</title>
+
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="imagegallery.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- TOP BAR -->
+
+    <div class="topbar">
+        <span class="material-symbols-outlined icon">menu</span>
+
+        <h1>Gallery</h1>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+            <button class="dark-toggle" id="darkModeToggle" title="Toggle dark mode">🌙</button>
+            <span class="material-symbols-outlined icon">account_circle</span>
+        </div>
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+
+        <input type="text" placeholder="Search photos, albums...">
+    </div>
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+        <button class="active">All</button>
+        <button>Nature</button>
+        <button>People</button>
+        <button>Travel</button>
+        <button>City</button>
+    </div>
+
+    <!-- GALLERY -->
+
+    <div class="gallery">
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/600?1" loading="lazy"> -->
+             <img src="images/young-woman-traveling-with-suitcase.jpg" alt="lady at the airport" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart active">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/800?2"> -->
+            <img src="images/tindari-7276929_640.jpg" alt="nature scene" data-category="nature"  loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/500?3" > -->
+            <img src="images/sunflowers-1719119_640.jpg" alt="Sunflowers" data-category="nature" loading="lazy" width="640" height="426">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/700?4" > -->
+             <img src="images/sunset-7133867_640.jpg" alt="Sunset" data-category="nature" loading="lazy" width="640" height="960">
+            <div class="heart active">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/550?5"> -->
+             <img src="images/girl-1990347_640.jpg" alt="lady wearing headphones" data-category="people"  loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6" > -->
+             <img src="images/people-6545894_640.jpg" alt="people on the street" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6"> -->
+             <img src="images/merry-christmas-4697055_640.jpg" alt="couple" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6"> -->
+             <img src="images/lisbon-8275994_640.jpg" alt="lisbon" data-category="city" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6"> -->
+             <img src="images/imagesofImage.jpeg" alt="a celebrity" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6"> -->
+             <img src="images/caucasus-5302236_640.jpg" alt="Caucasus" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+            <!-- <img src="https://picsum.photos/400/450?6"> -->
+             <img src="images/bachalpsee-7572681_640.jpg" alt="Bachalpsee" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/aiony-haust-3TLl_97HNJo-unsplash.jpg" alt="Aiony Haust" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/blake-verdoorn-cssvEZacHvQ-unsplash.jpg" alt="Blake Verdoorn" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt="Brooke Cagle" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/ian-dooley-d1UPkiFd04A-unsplash.jpg" alt="Ian Dooley" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/jeremy-bishop-EwKXn5CapA4-unsplash.jpg" alt="Jeremy Bishop" data-category="nature" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+       
+        <div class="card">
+             <img src="images/krakenimages-376KN_ISplE-unsplash.jpg" alt="people at work" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/luca-bravo-O453M2Liufs-unsplash.jpg" alt="boat on sea" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/mesut-kaya-o2n_WgCKR20-unsplash.jpg" alt="Mesut Kaya" data-category="city" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="Michael Dam" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/musa-ortac-eikWL4eFPrA-unsplash.jpg" alt="Dusk view" data-category="city" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/neom-eOWabmCNEdg-unsplash.jpg" alt="Dawn view" data-category="nature" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/neom-STV2s3FYw7Y-unsplash.jpg" alt="Sunset view" data-category="travel" loading="lazy" width="640" height="960 ">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg" alt="Ocean view" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/ryoji-iwata-X53e51WfjlE-unsplash.jpg" alt="Zebra crossing" data-category="people" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/sandra-beatrice-molnar-B3E-XwHw76Q-unsplash.jpg" alt="Molanr" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+
+        <div class="card">
+             <img src="images/slava-denisov-zsisPSMjo7w-unsplash.jpg" alt="Denisov" data-category="city" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+        
+        <div class="card">
+             <img src="images/tom-barrett-M0AWNxnLaMw-unsplash.jpg" alt="Plane" data-category="travel" loading="lazy" width="640" height="960">
+            <div class="heart">♡</div>
+        </div>
+       
+        <div class="empty">
+          <div style="font-size:60px;">🖼️</div>
+          <p>No matching photos found.</p>
+          <small>Try another category or keyword.</small>
+        </div>
+        
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading more photos...</p>
+        </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <span class="close" id="lightbox-close">&times;</span>
+
+        <div class="lightbox-container">
+            <img id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+            
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightbox-prev">❮</button>
+                <button class="lightbox-next" id="lightbox-next">❯</button>
+            </div>
+        </div>
+
+        <div class="lightbox-counter">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">6</span>
+        </div>
+
+    </div>
+
+    <!-- FAB -->
+
+    <button class="fab">📷</button>
+
+    <!-- TABS CONTAINER -->
+    
+    <div class="tabs-container">
+        
+        <!-- PHOTOS TAB (DEFAULT) -->
+        <div id="photos-section" class="tab-section active">
+            <!-- Gallery is above, no additional content needed -->
+        </div>
+        
+        <!-- ALBUMS TAB -->
+        <div id="albums-section" class="tab-section">
+            <div class="section-header">
+                <h2>My Albums</h2>
+                <button class="create-btn" id="create-album-btn">+ Create Album</button>
+            </div>
+            <div class="albums-grid">
+                <div class="album-card" data-category="nature">
+                    <div class="album-cover" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="album-count">6 photos</span>
+                    </div>
+                    <h3>Nature</h3>
+                    <p>Updated today</p>
+                </div>
+                <div class="album-card" data-category="people">
+                    <div class="album-cover" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="album-count">13 photos</span>
+                    </div>
+                    <h3>People</h3>
+                    <p>Updated today</p>
+                </div>
+                <div class="album-card" data-category="travel">
+                    <div class="album-cover" style="background: linear-gradient(135deg, #4facfe 0%, #b65718 100%);">
+                        <span class="album-count">9 photos</span>
+                    </div>
+                    <h3>Travel</h3>
+                    <p>Updated today</p>
+                </div>
+                <div class="album-card" data-category="city">
+                    <div class="album-cover" style="background: linear-gradient(135deg, #7c116e 0%, #9e8f0b 100%);">
+                        <span class="album-count">4 photos</span>
+                    </div>
+                    <h3>City</h3>
+                    <p>Updated today</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOR YOU TAB -->
+        <div id="foryou-section" class="tab-section">
+            <div class="section-header">
+                <h2>For You</h2>
+                <p class="subtitle">Based on your likes and interests</p>
+            </div>
+            <div class="foryou-container">
+                <div class="foryou-card">
+                    <div class="foryou-icon">❤️</div>
+                    <h3>Your Likes</h3>
+                    <p id="liked-count">2 photos liked</p>
+                    <button class="view-btn">View All Likes</button>
+                </div>
+                <div class="foryou-card">
+                    <div class="foryou-icon">⭐</div>
+                    <h3>Trending</h3>
+                    <p>Popular photos from your library</p>
+                    <button class="view-btn">Explore Trending</button>
+                </div>
+                <div class="foryou-card">
+                    <div class="foryou-icon">🎯</div>
+                    <h3>Suggested</h3>
+                    <p>Based on your viewing patterns</p>
+                    <button class="view-btn">See Suggestions</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- SETTINGS TAB -->
+        <div id="settings-section" class="tab-section">
+            <div class="section-header">
+                <h2>Settings</h2>
+            </div>
+            <div class="settings-container">
+                <div class="setting-group">
+                    <h3>Display</h3>
+                    <div class="setting-item">
+                        <label for="grid-columns">Grid Columns</label>
+                        <select id="grid-columns">
+                            <option value="2">2 columns</option>
+                            <option value="3" selected>3 columns</option>
+                            <option value="4">4 columns</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="image-quality">Image Quality</label>
+                        <select id="image-quality">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <h3>Notifications</h3>
+                    <div class="setting-item checkbox">
+                        <input type="checkbox" id="new-photos-notif" checked>
+                        <label for="new-photos-notif">Notify new photos</label>
+                    </div>
+                    <div class="setting-item checkbox">
+                        <input type="checkbox" id="album-notif" checked>
+                        <label for="album-notif">Album updates</label>
+                    </div>
+                </div>
+                
+                <div class="setting-group">
+                    <h3>Privacy</h3>
+                    <div class="setting-item">
+                        <label for="gallery-visibility">Gallery Visibility</label>
+                        <select id="gallery-visibility">
+                            <option value="private" selected>Private</option>
+                            <option value="friends">Friends Only</option>
+                            <option value="public">Public</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button class="save-settings-btn">💾 Save Settings</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BOTTOM NAV -->
+
+    <div class="bottom-nav">
+
+        <div class="nav-item active" data-tab="photos">
+            <span class="material-symbols-outlined">
+                image
+            </span>
+            Photos
+        </div>
+
+        <div class="nav-item" data-tab="albums">
+            <span class="material-symbols-outlined">
+                photo_library
+            </span>
+            Albums
+        </div>
+
+        <div class="nav-item" data-tab="foryou">
+            <span class="material-symbols-outlined">
+                auto_awesome
+            </span>
+            For You
+        </div>
+
+        <div class="nav-item" data-tab="settings">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            Settings
+        </div>
+
+    </div>
+  </div>
+
+<script src="imagegallery.js"></script>
+</body>
+</html>
