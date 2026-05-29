@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player UI</title>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="musicplayer.css">
+
+</head>
+<body>
+  <div class="player">
+    <div class="album-wrapper">
+      <img id="albumCover" src="images/adult-3086302_640.jpg" alt="album cover">
+    </div>
+
+    <h1>Pieces</h1>
+    <p class="artist">Keenan Te</p>
+
+    <div class="progress-container" id="progressContainer">
+      <div class="progress" id="progress"></div>
+    </div>
+    
+
+    <div class="time">
+      <span id="currentTime">00:00</span>
+      <span id="duration">0:00</span>
+    </div>
+    
+
+    <div class="controls">
+      <button class="like" id="addQueueBtn" title="Add to Queue"><i class="fa-solid fa-plus"></i></button>
+      <i class = "fa-solid fa-shuffle"></i>
+      <i class = "fa-solid fa-backward"></i>
+
+      <div class="play-btn" id="playBtn">
+        <i class="fa-solid fa-play" id="playIcon"></i>
+      </div>
+
+      <i class="fa-solid fa-forward"></i>
+      <i class="fa-solid fa-repeat"></i>
+
+      <button class="like" id="likeBtn"><i class="fa-regular fa-heart" id="likeIcon"></i></button>
+
+    </div>
+
+    <div class="volume">
+      <i class="fa-solid fa-volume-low"></i>
+      <input type="range" min="0" max="1" step="0.01" value="0.7" id="volume" class="volume-slider">
+      <i class="fa-solid fa-volume-high"></i>
+    </div>
+
+    <audio id="audio" src="music/Keenan-Te-Pieces-(CeeNaija.com).mp3"></audio>
+
+    <div class="base">
+
+      <a href="musicplayer.html" class="nav-item active">
+        <i class="bi bi-music-note"></i><br>
+        Playing
+      </a>
+
+      <a href="liked.html" class="nav-item">
+        <i class="fa-solid fa-heart"></i><br>
+        Liked
+      </a>
+
+      <a href="QueueMusic.html" class="nav-item">
+        <i class="bi bi-music-note-list"></i><br>
+        Queue
+      </a>
+
+      <a href="explore.html" class="nav-item">
+        <i class="fa-solid fa-magnifying-glass"></i><br>
+        Explore
+      </a>
+    </div>
+  </div>
+
+  <script src="songs.js"></script>
+  <script src="music.js"></script>
+</body>
+</html>

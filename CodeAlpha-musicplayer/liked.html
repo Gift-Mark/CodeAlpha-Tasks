@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liked Songs</title>
+
+  <style>
+    body{
+      background:#111;
+      color:white;
+      font-family:Arial;
+      padding:20px;
+    }
+
+    .song{
+      background:#222;
+      padding:15px;
+      border-radius:10px;
+      margin-bottom:10px;
+      cursor:pointer;
+      transition: transform 0.2s ease, background 0.2s ease;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .song:hover{
+      background:#333;
+      transform: translateY(-2px);
+    }
+
+    .song-meta {
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+
+    .play-hint {
+      color:#a855f7;
+      font-size:0.9rem;
+      font-weight:700;
+    }
+
+    h1{
+      margin-bottom:20px;
+    }
+
+    .nav-link{
+      display:inline-block;
+      margin-bottom:18px;
+      color:#fff;
+      text-decoration:none;
+      padding:10px 16px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.16);
+      background: rgba(142,59,255,0.16);
+      transition: background 0.2s ease;
+    }
+
+    .nav-link:hover{
+      background: rgba(142,59,255,0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Liked Songs ❤️</h1>
+  <a class="nav-link" href="musicplayer.html">Open Player</a>
+
+  <div id="likedContainer"></div>
+
+  <script src="songs.js"></script>
+  <script>
+    const likedContainer = document.getElementById("likedContainer");
+    const likedSongs = JSON.parse(localStorage.getItem("likedSongs")) || [];
+
+    if (likedSongs.length === 0) {
+      likedContainer.innerHTML = "<p>No liked songs yet.</p>";
+    }
+
+    likedSongs.forEach((song) => {
+      const songIndex = songs.findIndex(
+        (item) => item.title === song.title && item.artist === song.artist
+      );
+
+      likedContainer.innerHTML += `
+        <div class="song" ${songIndex !== -1 ? `onclick="playLikedSong(${songIndex})"` : ""}>
+          <div class="song-meta">
+            <h3>${song.title}</h3>
+            <p>${song.artist}</p>
+          </div>
+          <span class="play-hint">Play</span>
+        </div>
+      `;
+    });
+
+    function playLikedSong(index) {
+      localStorage.setItem("currentSong", index);
+      window.location.href = "musicplayer.html";
+    }
+  </script>
+
+</body>
+</html>
